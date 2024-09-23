@@ -29,3 +29,10 @@ printWhenReady('XYZ', console.log);
 printWhenReady('ABC', print);
 
 console.log('This is the end');
+
+
+// call back function can be in the beginning
+function printText(cb, text){
+    cb(text);
+}
+printText(console.log, 'Hello');
